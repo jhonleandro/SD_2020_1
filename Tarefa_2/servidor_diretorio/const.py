@@ -1,0 +1,4 @@
+SERVER = "localhost"
+PORT = 12309
+SERVER_DIR = "172.31.90.91"
+PORT_DIR = 12310
