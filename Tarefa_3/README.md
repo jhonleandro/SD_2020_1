@@ -25,4 +25,4 @@ Assim como os arquivos anteriores, esse é um arquivo onde há código. Ele é q
 ### Melhorias
 
 Novas funcionalidades: registrar um nome já existente(exposed_registraServidorNovamente) e excluir elementos da lista(exposed_removaServidor).
-Obs: a melhoria "Evitar o lookup de nomes não existentes" já existia dentro de (exposed_buscaServidor).
+> Obs: a melhoria "Evitar o lookup de nomes não existentes" já existia dentro de (exposed_buscaServidor).
