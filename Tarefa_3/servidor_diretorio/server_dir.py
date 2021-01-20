@@ -12,12 +12,12 @@ class ServerDirectory(rpyc.Service):
     def __init__(self, lista):
         self.listaDiretorio = lista
 
-    def exposed_registraServer(self, serverName, ipAdress, portNum):
+    def exposed_registraServidor(self, serverName, ipAdress, portNum):
         self.listaDiretorio.update({serverName : (ipAdress, portNum)})
         print(f"Registrando Servidor...")
         print(self.listaDiretorio)
 
-    def exposed_buscaServer(self, serverName):
+    def exposed_buscaServidor(self, serverName):
         print(f"Buscando Servidor...")
 
         if  serverName in self.listaDiretorio:
@@ -29,7 +29,7 @@ class ServerDirectory(rpyc.Service):
             print(self.listaDiretorio)
             return self.servidorInexistente
     
-    def exposed_registraServerNovamente(self, serverName, ipAdress, portNum):
+    def exposed_registraServidorNovamente(self, serverName, ipAdress, portNum):
         print(f"Registrando Servidor Novamente...")
         
         if serverName in self.listaDiretorio:
@@ -40,7 +40,7 @@ class ServerDirectory(rpyc.Service):
             print(f"Item não registrado...")
             return self.servidorNaoRegistrado
 
-    def exposed_removaServer(self, serverName):
+    def exposed_removaServidor(self, serverName):
         print(f"Removendo Servidor...")
         
         if  serverName in self.listaDiretorio:
